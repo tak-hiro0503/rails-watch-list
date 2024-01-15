@@ -1,0 +1,10 @@
+<%= simple_form_for(@bookmark) do |f| %>
+  <%= f.error_notification %>
+
+  <%= f.association :movie, collection: Movie.all, prompt: "Select a Movie" %>
+  <%= f.association :list, collection: List.all, prompt: "Select a List" %>
+
+  <%= f.input :comment %>
+
+  <%= f.button :submit %>
+<% end %>
