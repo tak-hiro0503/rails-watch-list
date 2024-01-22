@@ -8,6 +8,6 @@ Rails.application.routes.draw do
   end
   resources :movies
   resources :bookmarks
-
+``
 
 end
